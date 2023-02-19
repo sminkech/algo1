@@ -1,0 +1,25 @@
+ALGORITHM algo 
+VAR
+    i:INTEGER=0
+    characters,words,vowels :INTEGER
+    sentence :STRING
+    sentence := "if you play with fire you make burned"
+BEGIN
+    WHILE (sentence[i] !="."){
+        DO characters++
+
+        if(sentence[i] = "o" OR sentence[i] = "i" OR sentence[i] = "u" OR sentence[i] ="y")
+        DO vowels := vowels + 1
+        
+        if(sentence[i] := " "){
+        DO words := words + 1
+    } 
+    
+    i++
+    }
+    write(characters)
+    write(vowels)
+    write(words)
+        
+    END_WHILE
+END
